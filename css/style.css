@@ -1,0 +1,14 @@
+.article-title{
+    text-align: center;
+    font-size: 50pt;
+}
+.article-content{
+    font-size: 25pt;
+    margin: 0 25pt 0 25pt;
+}
+.article-img {
+    display: block;
+    margin: 75pt auto;
+    width: 250px;
+    height: 300px;
+}

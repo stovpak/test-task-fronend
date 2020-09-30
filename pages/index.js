@@ -1,7 +1,7 @@
+import Blog from "../components/blog";
+
 const Index = () => (
-    <div>
-        <a>Hellow next</a>
-    </div>
+    <Blog/>
 );
 
 export default Index;
