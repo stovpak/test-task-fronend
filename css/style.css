@@ -12,3 +12,15 @@
     width: 250px;
     height: 300px;
 }
+.delete-article {
+    margin-top: 5pt;
+    margin-left: 10pt;
+}
+
+.update-or-create-article {
+    margin-top: 15pt;
+}
+.pop-up-menu{
+    margin-top: 5pt;
+    margin-left: 10pt;
+}

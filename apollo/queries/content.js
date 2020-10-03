@@ -4,9 +4,11 @@ const CONTENT_QUERY = gql`
   query Content {
     blog {
       articles {
+        id,
         title, 
         content,
         image {
+           id
            url
         }
       }
