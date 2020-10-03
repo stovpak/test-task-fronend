@@ -2,11 +2,11 @@ import React from "react";
 import Query from "../components/query";
 import CONTENT_QUERY from "../apollo/queries/content";
 import PopUpMenu from "./popUpMenu";
-import DeleteArticleButton from "./deleteArticle";
+import DeleteArticleButton from "./deleteArticleForm";
 
 const Blog = () => {
     return (
-        <div>
+        <div className="row justify-content-center align-items-center">
             <Query query={CONTENT_QUERY} id={null}>
                 {({ data:  {blog}  }) => {
                     const articles = blog.articles;

@@ -1,13 +1,13 @@
 import React from "react";
 
-function addArticleToBlog(input,articleId,articleIds, functionType){
+function addArticleToBlog(articleId,articleIds, functionType){
     articleIds.push(articleId)
-    input = {
+    let input = {
         "data": {
             "articles":articleIds
         }
     }
     functionType({variables: {input}});
-};
+}
 
 export default addArticleToBlog;

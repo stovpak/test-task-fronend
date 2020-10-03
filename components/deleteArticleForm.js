@@ -1,24 +1,17 @@
 import React from "react";
 import { useMutation } from '@apollo/client';
 import DELETE_ARTICLE from '../apollo/queries/deleteArticle';
+import deleteArticle from "../containers/deleteArticle";
 
 const DeleteArticleButton = props => {
     let id = props.id;
-    let input = {};
-    const [deleteArticle] = useMutation(DELETE_ARTICLE);
+    const [deleteArticleQuery] = useMutation(DELETE_ARTICLE);
     return (
-        <div>
+        <div className='delete-article'>
             <form
                 onSubmit={e => {
-                    console.log(id);
                     e.preventDefault();
-                    input = {
-                        "where": {
-                            "id": id
-                        }
-                    }
-                    deleteArticle({ variables: {input} });
-                    window.location.reload(false);
+                   deleteArticle({"where": {"id": id}}, deleteArticleQuery);
                 }}
             >
                 <button type="submit">Delete article</button>
